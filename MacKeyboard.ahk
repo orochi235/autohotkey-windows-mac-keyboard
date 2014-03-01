@@ -150,7 +150,14 @@ Lwin & Tab::AltTab
 ; Google Chrome
 #IfWinActive, ahk_class Chrome_WidgetWin_1
 
-<#l::!d
+; Cmd-L for address bar
+#l::
+	Send !d
+	Send ^a
+	return
+
+; Cmd-R to refresh
+#r::Send {F5}
 
 ; Show Web Developer Tools with cmd + alt + i
 #!i::Send {F12}
@@ -159,4 +166,3 @@ Lwin & Tab::AltTab
 #!u::Send ^u
 
 #IfWinActive
-
