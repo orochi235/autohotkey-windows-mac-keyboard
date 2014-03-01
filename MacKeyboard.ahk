@@ -143,24 +143,14 @@ Lwin & Tab::AltTab
 ; Map Alt + N to ~
 !n::SendInput {~}
 
-
-; --------------------------------------------------------------
-; Custom mappings for special chars
-; --------------------------------------------------------------
-
-#ö::SendInput {[} 
-#ä::SendInput {]} 
-
-^ö::SendInput {{} 
-^ä::SendInput {}} 
-
-
 ; --------------------------------------------------------------
 ; Application specific
 ; --------------------------------------------------------------
 
 ; Google Chrome
 #IfWinActive, ahk_class Chrome_WidgetWin_1
+
+<#l::!d
 
 ; Show Web Developer Tools with cmd + alt + i
 #!i::Send {F12}
